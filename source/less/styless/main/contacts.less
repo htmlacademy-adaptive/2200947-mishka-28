@@ -1,3 +1,32 @@
+.contacts {
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
+}
+
+.contacts__wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.contacts__email {
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
+.ontacts__address {
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
 .contacts__title {
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
@@ -5,7 +34,6 @@
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-left: 30px;
   margin-top: 38px;
   margin-bottom: 28px;
 }
@@ -22,4 +50,9 @@
 
 .contacts__button {
   margin-bottom: 45px;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
 }

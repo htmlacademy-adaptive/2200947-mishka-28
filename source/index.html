@@ -2,30 +2,36 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
-        <img src="" width="86px" height="35px" alt="Логотип Мишка.">
-      </a>
-      <button class="main-header__toggle" type="button">
+      <nav class="main-header__nav main-nav">
+        <div class="main-nav__top">
+        <a class="main-nav__logo logo" href="index.html">
+         <img class="main-nav__image"  src="./img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип Мишка." >
+        </a>
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
+        </button>
+      </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link" href="search.html">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--basket">
             <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -50,26 +56,31 @@
         </ul>
       </section>
       <section class="product-week">
-        <h2 class="product-week__title">Товар недели</h2>
-        <h3 class="product-week__name">Вязаные корзинки</h3>
-        <p class="product-week__text">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках и трёх размерах.</p>
-        <table class="product-week__characteristics characteristics-table">
-          <tr class="characteristics-table__line-one">
-            <td class="characteristics-table__column-left">Цвет:</td>
-            <td class="characteristics-table__column-right">тиффани/серый</td>
-          </tr>
-          <tr class="characteristics-table__line-two">
-            <td class="characteristics-table__column-left">Диаметр:</td>
-            <td class="characteristics-table__column-right">25 см</td>
-          </tr>
-          <tr class="characteristics-table__line-three">
-            <td class="characteristics-table__column-left">Высота:</td>
-            <td class="characteristics-table__column-right">15 см</td>
-          </tr>
-        </table>
-        <img class="product-week__pic" src="./img/triple-set-mobile 1.jpg" alt="Корзинки.">
-        <div class="product-week__price">Цена: 990 руб.</div>
-        <button class="product-week__button button button--product-week">Заказать</button>
+        <div class="product-week__names">
+          <h2 class="product-week__title">Товар недели</h2>
+          <h3 class="product-week__name">Вязаные корзинки</h3>
+        </div>
+        <div class="product-week__properties">
+          <p class="product-week__text">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках и трёх размерах.</p>
+          <table class="product-week__characteristics characteristics-table">
+            <tr class="characteristics-table__line-one">
+              <td class="characteristics-table__column-left">Цвет:</td>
+              <td class="characteristics-table__column-right">тиффани/серый</td>
+            </tr>
+            <tr class="characteristics-table__line-two">
+              <td class="characteristics-table__column-left">Диаметр:</td>
+              <td class="characteristics-table__column-right">25 см</td>
+            </tr>
+            <tr class="characteristics-table__line-three">
+              <td class="characteristics-table__column-left">Высота:</td>
+              <td class="characteristics-table__column-right">15 см</td>
+            </tr>
+          </table>
+          <img class="product-week__pic" src="./img/triple-set-mobile 1.jpg" alt="Корзинки.">
+          <div class="product-week__price">Цена: 990 руб.</div>
+          <button class="product-week__button button button--product-week">Заказать</button>
+        </div>
+
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
@@ -96,15 +107,17 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email email">
-          <h3 class="email__title">e-mail</h3>
-          <a class="email__text" href="mailto:fo@mimimishkashop.ru">fo@mimimishkashop.ru</a>
+        <div class="contacts__wrapper">
+          <div class="contacts__email email">
+            <h3 class="email__title">e-mail</h3>
+            <a class="email__text" href="mailto:fo@mimimishkashop.ru">fo@mimimishkashop.ru</a>
+          </div>
+          <address class="contacts__address adress">
+            <h3 class="adress__title">адрес:</h3>
+            <p class="adress__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+          </address>
         </div>
-        <address class="contacts__address adress">
-          <h3 class="adress__title">адрес:</h3>
-          <p class="adress__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-        </address>
-        <div class="contacts__map contacts__map-img">  </div>
+        <div class="contacts__map contacts__map-img"></div>
         <button class="contacts__button button button--contacts">Напишите нам</button>
       </section>
     </main>
