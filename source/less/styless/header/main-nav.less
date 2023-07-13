@@ -1,15 +1,154 @@
+.main-nav {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main-nav__tablet-nav {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+
+.main-nav__top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: contents;
+  }
+}
+
+.main-nav__image {
+  padding: 22px 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo {
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/mishka-logo-tablet.svg);
+    background-repeat: no-repeat;
+    width: 113px;
+    height: 46px;
+    margin: 22px 209px 20px 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  margin-left: 67px;
+  margin-right: 31px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding-left: 30px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: contents;
+  }
 }
 
 .main-nav__item {
   list-style-type: none;
   padding-top: 28px;
   padding-bottom: 27px;
-  padding-left: 76px;
+  padding-right: 20px;
+}
+
+.main-nav__item--catalog {
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.main-nav__item--form {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.main-nav__item--search {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 4;
+  }
+}
+
+.main-nav__item--basket {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
+}
+
+.main-nav__item--news {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    order: 6;
+  }
+}
+
+.main-nav__item--sale {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    order: 7;
+  }
+}
+
+.main-nav__item--delivery {
+  display: none;
+
+  @media (min-width: @tablet-width){
+    display: block;
+    order: 5;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 8;
+  }
 }
 
 .main-nav__link {
@@ -20,4 +159,3 @@
   font-weight: 700;
   color: #000000;
 }
-

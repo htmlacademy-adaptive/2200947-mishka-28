@@ -2,32 +2,46 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
-        <img src="" width="86px" height="35px" alt="Логотип Мишка.">
-      </a>
-      <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="search.html">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <nav class="main-header__nav main-nav">
+        <div class="main-nav__tablet-nav">
+          <div class="main-nav__top">
+            <a class="main-nav__logo logo" href="index.html">
+             <img class="main-nav__image"  src="./img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип Мишка." >
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--catalog">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item main-nav__item--form">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link" href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--news">
+              <a class="main-nav__link" href="news.html">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale">
+              <a class="main-nav__link" href="sale.html">Распродажа</a>
+            </li>
+            <li class="main-nav__item main-nav__item--delivery">
+              <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
