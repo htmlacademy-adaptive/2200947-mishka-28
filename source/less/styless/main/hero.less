@@ -22,6 +22,7 @@
       margin: 0 auto;
       text-align: center;
       padding-top: 73px;
+      padding-bottom: 73px;
     }
 
     &--form {
@@ -30,8 +31,7 @@
       text-align: center;
       padding-top: 73px;
     }
-  }
-
+}
 .hero__background {
 
   &--index {
@@ -42,10 +42,26 @@
   &--form {
     background-color: #f1f1f1;
     min-height: 177px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 226px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 255px;
+    }
   }
 
   &--catalog {
     background-color: #f1f1f1;
     min-height: 177px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 226px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 255px;
+    }
   }
 }
