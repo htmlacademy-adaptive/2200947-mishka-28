@@ -17,10 +17,37 @@
 
 .goods-section__item {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  min-height: 103px;
+
+    &--interior {
+      background-color: #63D1BB;
+    }
+
+    &--toys {
+      background-color: #56C3B2;
+  }
 
   @media (min-width: @tablet-width) {
     width: 50%;
   }
+}
+
+.goods-section__item--interior::after {
+  content: url(/img/main-index/interior.svg);
+  display: block;
+  position: relative;
+  top: 22px;
+  left: 83px;
+}
+
+.goods-section__item--toys::after {
+  content: url(/img/main-index/toy.svg);
+  display: block;
+  position: relative;
+  top: 22px;
+  left: 68px;
 }
 
 .goods-section__link {
@@ -34,15 +61,5 @@
   padding-top: 24px;
   padding-bottom: 30px;
   padding-left: 31px;
-
-  &--interior {
-    background-color: #63D1BB;
-  }
-
-  &--toys {
-    background-color: #56C3B2;
-  }
+  width: 130px;
 }
-
-
-
