@@ -26,10 +26,10 @@
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link" href="search.html">Поиск по сайту</a>
+              <a class="main-nav__link main-nav__link--search" href="search.html">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
+              <a class="main-nav__link main-nav__link--basket" href="basket.html">Корзина: пока пуста</a>
             </li>
             <li class="main-nav__item main-nav__item--news">
               <a class="main-nav__link" href="news.html">Новые поступления</a>
@@ -38,7 +38,7 @@
               <a class="main-nav__link" href="sale.html">Распродажа</a>
             </li>
             <li class="main-nav__item main-nav__item--delivery">
-              <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
+              <a class="main-nav__link main-nav__link--delivery" href="delivery.html">Бесплатная доставка по России</a>
             </li>
           </ul>
         </div>
@@ -121,14 +121,24 @@
         <div class="contacts__wrapper">
           <div class="contacts__email email">
             <h3 class="email__title">e-mail</h3>
-            <a class="email__text" href="mailto:fo@mimimishkashop.ru">fo@mimimishkashop.ru</a>
+            <a class="email__text" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </div>
           <address class="contacts__address adress">
             <h3 class="adress__title">адрес:</h3>
             <p class="adress__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
           </address>
         </div>
-        <div class="contacts__map contacts__map-img"></div>
+        <div class="contacts__map contacts__map-img">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2057.1659491620403!2d30.321432635843603!3d59.93873812393032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1690221757098!5m2!1sru!2sru"
+            width="320"
+            height="454"
+            style="border:0;"
+            allowfullscreen="Офис компании по адресу ул. Большая Конюшенная д. 19/8, офис 101, Санкт-Петербург"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
         <button class="contacts__button button button--contacts">Напишите нам</button>
       </section>
     </main>

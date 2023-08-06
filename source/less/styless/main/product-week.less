@@ -6,19 +6,21 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 50px;
+    margin-right: 50px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 175px 350px 525px;
     grid-auto-rows: min-content;
+    margin-bottom: 164px;
   }
 }
 
 .product-week__title {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: #63D1BB;
@@ -27,8 +29,10 @@
 
   @media (min-width: @tablet-width) {
     width: 100px;
+    text-align: center;
     margin: 0;
     margin-top: 30px;
+    margin-right: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,6 +56,7 @@
 
   @media (min-width: @desktop-width) {
     display: contents;
+
   }
 }
 
@@ -66,11 +71,21 @@
   margin-top: 31px;
   margin-bottom: 4px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 37px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-size: 53px;
+    line-height: 57px;
+    width: 545px;
+    order: 1;
   }
 }
 
@@ -100,6 +115,10 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    font-size: 17px;
+    line-height: 30px;
+    width: 292px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -125,6 +144,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -132,6 +152,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-right: 58px;
   }
 }
 
@@ -146,6 +167,10 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
+    width: 334px;
+    height: 404px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,6 +178,8 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 6;
+    width: 525px;
+    height: 636px;
   }
 }
 
@@ -170,6 +197,8 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
@@ -177,6 +206,7 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    margin-right: 58px;
   }
 }
 
@@ -188,6 +218,7 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
+    width: 292px;
   }
 
   @media (min-width: @desktop-width) {

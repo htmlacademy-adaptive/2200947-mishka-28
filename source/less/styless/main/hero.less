@@ -10,11 +10,24 @@
   width: 260px;
   color: #000000;
 
+  &--index {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 73px;
+    padding-bottom: 193px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+
     &--index {
       display: block;
       margin: 0 auto;
       text-align: center;
-      padding-top: 73px;
+      padding-top: 155px;
       padding-bottom: 120px;
     }
 
@@ -32,6 +45,18 @@
       text-align: center;
       padding-top: 73px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+
+    &--index {
+      padding-top: 158px;
+      padding-bottom: 474px;
+    }
+  }
 }
 
 .hero__background {
@@ -40,6 +65,16 @@
     background-image: url(/img/main-index/hero-mobile.jpg);
     background-size: cover;
     height: 300px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: -78px;
+      height: 746px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url(/img/main-index/hero-desktop-index.jpg);
+      width: 1150px;
+    }
   }
 
   &--form {
