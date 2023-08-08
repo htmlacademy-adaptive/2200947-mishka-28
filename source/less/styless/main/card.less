@@ -9,15 +9,14 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 52px;
   }
-
 }
 
 .card__item {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
   margin-bottom: 30px;
+  border: 1px solid #ECECEC;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -55,6 +54,7 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
   margin-left: 28px;
   margin-bottom: 41px;
 
@@ -72,6 +72,7 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
   margin-left: 28px;
   margin-bottom: 26px;
 
@@ -86,12 +87,30 @@
 .card__image {
   order: -1;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 5;
+  }
+
+  &--rabbit {
+    background-image: url(/img/main-catalog/rabbit-mobile.jpg);
+    width: 260px;
+    height: 195px;
+  }
+
+  &--basket {
+    background-image: url(/img/main-catalog/basket-mobile.jpg);
+    width: 260px;
+    height: 195px;
+  }
+
+  &--basket-toys {
+    background-image: url(/img/main-catalog/basket-toys-mobile.jpg);
+    width: 260px;
+    height: 195px;
   }
 }
