@@ -46,6 +46,22 @@
       text-align: center;
       padding-top: 73px;
       padding-bottom: 73px;
+
+      @media (min-width: @tablet-width) {
+        margin-bottom: 79px;
+        padding-bottom: 0;
+
+        &::after {
+          content: url(/img/main-index/zigzag-fill-desktop.svg);
+          position: relative;
+          top: 90px;
+          left: -50px;
+
+          @media (min-width: @desktop-width) {
+            top: 85px;
+          }
+        }
+      }
     }
 
     &--form {
@@ -64,6 +80,12 @@
     &--index {
       padding-top: 158px;
       padding-bottom: 474px;
+    }
+
+    &--catalog {
+      margin-bottom: 111px;
+      margin-top: -76px;
+      padding-top: 101px;
     }
   }
 }

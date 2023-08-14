@@ -1,3 +1,21 @@
+.goods-section {
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: url(/img/main-index/zigzag-fill-desktop.svg);
+      position: relative;
+      top: -63px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      left: 180px;
+    }
+  }
+}
+
 .goods-section__list {
   display: flex;
   flex-direction: column;

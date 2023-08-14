@@ -3,6 +3,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    position: relative;
 
     &::before {
       content: "";
@@ -12,11 +13,10 @@
       background-color: #000000;
       opacity: 0.1;
       top: 97px;
-      left: 80px;
+      left: -50px;
 
       @media (min-width: @desktop-width) {
         width: 1150px;
-        left: 60px;
         top: 117px;
       }
     }
@@ -190,6 +190,18 @@
   @media (min-width: @desktop-width) {
     order: 2;
     margin-right: 45px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 117px;
+      background-color: #000000;
+      opacity: 0.1;
+      position: absolute;
+      left: -32px;
+      top: 0px;
+    }
   }
 }
 
@@ -197,11 +209,42 @@
   @media (min-width: @tablet-width) {
     order: 1;
     width: 82px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 97px;
+      background-color: #000000;
+      opacity: 0.1;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 97px;
+      background-color: #000000;
+      opacity: 0.1;
+      position: absolute;
+      left: 82px;
+      top: 0px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     order: 4;
     margin-right: 35px;
+
+    &::after {
+      height: 118px;
+    }
+
+    &::before {
+      height: 118px;
+    }
   }
 }
 
