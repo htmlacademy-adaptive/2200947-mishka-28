@@ -3,18 +3,25 @@
   @media (min-width: @tablet-width) {
 
     &::after {
-      content: url(/img/main-index/zigzag-line-desktop.svg);
-      position: relative;
-      left: 30px;
-      top: -30px;
+      content: "";
+      display: block;
+      background-image: url(/img/main-index/zigzag-line.jpg);
+      background-repeat: repeat-x;
+      width: 772px;
+      height: 17px;
     }
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
 
     &::after {
-      top: -75px;
-      left: 250px;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      top: 410px;
+      left: 50px;
+      position: absolute;
     }
   }
 }
@@ -188,6 +195,6 @@
     background-image: url(/img/main-index/review-1.jpg);
     background-repeat: no-repeat;
     order: -1;
-    margin-left: -50px;
+    margin-left: -175px;
   }
 }

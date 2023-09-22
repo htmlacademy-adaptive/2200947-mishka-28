@@ -9,10 +9,12 @@
     margin-right: 50px;
 
     &::after {
-      content: url(/img/main-index/zigzag-line-desktop.svg);
-      position: relative;
-      left: -50px;
-      top: 0px;
+      content: "";
+      background-image: url(/img/main-index/zigzag-line.jpg);
+      background-repeat: repeat-x;
+      width: 772px;
+      height: 17px;
+      margin-left: -50px;
     }
   }
 
@@ -21,10 +23,15 @@
     grid-template-columns: 175px 350px 525px;
     grid-auto-rows: min-content;
     margin-bottom: 164px;
+    position: relative;
 
     &::after {
-      top: 600px;
-      left: 200px;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      top: 725px;
+      left: 50px;
+      position: absolute;
     }
   }
 }

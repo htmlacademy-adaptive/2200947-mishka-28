@@ -46,6 +46,11 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
+
 }
 
 .card__text {
@@ -108,6 +113,10 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
   }
 
   &--rabbit {
