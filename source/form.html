@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__tablet-nav">
           <div class="main-nav__top">
             <a class="main-nav__logo logo" href="index.html">
-             <img class="main-nav__image"  src="./img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип Мишка." >
+             <img class="main-nav__image"  src="./img/header/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип Мишка." >
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -26,10 +26,10 @@
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link" href="search.html">Поиск по сайту</a>
+              <a class="main-nav__link main-nav__link--search" href="search.html">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
+              <a class="main-nav__link main-nav__link--basket" href="basket.html">Корзина: пока пуста</a>
             </li>
             <li class="main-nav__item main-nav__item--news">
               <a class="main-nav__link" href="news.html">Новые поступления</a>
@@ -38,7 +38,7 @@
               <a class="main-nav__link" href="sale.html">Распродажа</a>
             </li>
             <li class="main-nav__item main-nav__item--delivery">
-              <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
+              <a class="main-nav__link main-nav__link--delivery" href="delivery.html">Бесплатная доставка по России</a>
             </li>
           </ul>
         </div>
@@ -61,35 +61,18 @@
             <ul class="forms__list">
               <li class="forms__item">
                 <p class="forms__label-group">
-                  <input
-                    class="forms__radio visually-hidden"
-                    type="radio"
-                    name="impression"
-                    value="accessory"
-                    id="filter-accessory"
-                    checked
-                  />
-                  <label
-                  class="forms__controls form__controls--radio"
-                  for="filter-accessory"
-                  >Аксессуар для интерьера</label
-                  >
+                  <input class="forms__radio " type="radio" name="impression" value="accessory" id="filter-accessory" checked>
+                  <label class="forms__controls form__controls--radio">
+                    <span class="forms__control-label">Аксессуар для интерьера</span>
+                  </label>
                 </p>
               </li>
               <li class="forms__item">
                 <p class="forms__label-group">
-                  <input
-                    class="forms__radio visually-hidden"
-                    type="radio"
-                    name="impression"
-                    value="toy"
-                    id="filter-toy"
-                  />
-                  <label
-                    class="forms__controls forms__controls--radio"
-                    for="filter-toy"
-                    >Детская игрушка</label
-                  >
+                  <input class="forms__radio " type="radio" name="impression" value="toy" id="filter-toy">
+                  <label class="forms__controls form__controls--radio">
+                    <span class="forms__control-label">Детская игрушка</span>
+                  </label>
                 </p>
               </li>
             </ul>
@@ -98,11 +81,11 @@
             <legend class="forms__legend">
               Цвет
             </legend>
-            <ul class="forms__list-color">
-              <li class="forms__item-color forms__item-color--white">
+            <ul class="forms__list">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="white"
                     value="white"
@@ -113,10 +96,10 @@
                   >
                 </p>
               </li>
-              <li class="forms__item-color forms__item-color--grey">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="grey"
                     value="grey"
@@ -126,10 +109,10 @@
                   <label class="forms__controls forms__controls--checkbox" for="grey">Серый</label>
                 </p>
               </li>
-              <li class="forms__item-color forms__item-color--tiffany">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="tiffany"
                     value="tiffany"
@@ -138,10 +121,10 @@
                   <label class="forms__controls forms__controls--checkbox" for="tiffany">Тиффани</label>
                 </p>
               </li>
-              <li class="forms__item-color forms__item-color--black">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="black"
                     value="black"
@@ -150,10 +133,10 @@
                   <label class="forms__controls forms__controls--checkbox" for="black">Черный</label>
                 </p>
               </li>
-              <li class="forms__item-color forms__item-color--pink">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="pink"
                     value="pink"
@@ -162,10 +145,10 @@
                   <label class="forms__controls forms__controls--checkbox" for="pink">Розовый</label>
                 </p>
               </li>
-              <li class="forms__item-color forms__item-color--orange">
+              <li class="forms__item">
                 <p class="forms__label-group">
                   <input
-                    class="forms__checkbox visually-hidden"
+                    class="forms__checkbox "
                     type="checkbox"
                     name="orange"
                     value="orange"
@@ -303,9 +286,10 @@
       <div class="main-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии.">
+          <img src="img/footer/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии.">
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -4,6 +4,11 @@
   @media (min-width: @tablet-width) {
     margin-left: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+    margin-bottom: 88px;
+  }
 }
 
 .advantages__title {
@@ -14,6 +19,17 @@
   color: #000000;
   margin-top: 31px;
   margin-bottom: 82px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 54px;
+  }
 }
 
 .advantages__list {
@@ -23,6 +39,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
   }
 }
 
@@ -35,14 +52,20 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 82px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     max-width: 325px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &--package {
     margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
   }
 }
 
@@ -56,6 +79,14 @@
   }
 }
 
+.advantages__item--ecological::before {
+  content: url(/img/main-index/eco.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
+}
+
 .advantages__item--style {
 
   @media (min-width: @tablet-width) {
@@ -64,6 +95,14 @@
     grid-row-start: 2;
     grid-row-end: 3;
   }
+}
+
+.advantages__item--style::before {
+  content: url(/img/main-index/stylescan.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
 }
 
 .advantages__item--like {
@@ -76,6 +115,14 @@
   }
 }
 
+.advantages__item--like::before {
+  content: url(/img/main-index/likeheart.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
+}
+
 .advantages__item--handmade {
 
   @media (min-width: @tablet-width) {
@@ -84,6 +131,14 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+}
+
+.advantages__item--handmade::before {
+  content: url(/img/main-index/handmade.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
 }
 
 .advantages__item--domestic {
@@ -96,6 +151,14 @@
   }
 }
 
+.advantages__item--domestic::before {
+  content: url(/img/main-index/domestic.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
+}
+
 .advantages__item--package {
 
   @media (min-width: @tablet-width) {
@@ -104,4 +167,12 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
+}
+
+.advantages__item--package::before {
+  content: url(/img/main-index/package.svg);
+  position: relative;
+  display: block;
+  top: -10px;
+  left: 5px;
 }

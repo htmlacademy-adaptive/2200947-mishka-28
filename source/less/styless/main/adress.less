@@ -1,3 +1,22 @@
+.adress {
+  display: grid;
+  grid-template-columns: 76px 183px;
+  grid-template-rows: auto;
+  font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+  }
+}
+
 .adress__title {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -5,8 +24,11 @@
   font-weight: 400;
   color: #444444;
   margin: 0;
-  margin-left: 30px;
   display: inline;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 
   @media (min-width: @desktop-width) {
     min-width: 82px;
@@ -21,6 +43,10 @@
   color: #444444;
   margin: 0;
   display: inline;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 
   @media (min-width: @desktop-width) {
     min-width: 249px;
